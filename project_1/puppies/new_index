@@ -1,0 +1,35 @@
+function loadNewHome() {
+
+  // Backgrownd Image
+  let background = document.createElement("style");
+  background.textContent = `body { 
+      background-image: url('https://tavernastavros.gr/wp-content/uploads/2017/05/tavernastavros-slide4.jpg');
+      background-size: cover;
+  }`;
+
+  // H1 and button
+  document.head.appendChild(background);
+
+  document.body.innerHTML = `
+    <h1 style="text-align: center; font-size: 3em; color: blue;"> Ψαροταβέρνα ο Τάκης </h1>
+    
+    <div>
+      <button style="display: block; margin: 0 auto; top:50%; border:none; border-radius:10px; background-color: blue; color: white;" 
+          onclick="window.location.href='http://psarotaverna-o-takis.csec.chatzi.org/index.php?localize=en';">Go To eClass
+      </button>
+    </div>
+  `;
+
+}
+
+
+
+// Remove previous elements from html
+let div = document.getElementById("container");
+div.replaceChildren();
+
+div.id = "home"; 
+document.getElementsByTagName("head")[0].innerHTML = "";
+
+// load the new home page
+loadNewHome();

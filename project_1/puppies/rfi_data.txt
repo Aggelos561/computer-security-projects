@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>Open eClass | Εργαλεία Διαχείρισης Πλατφόρμας | Αρχείο ρυθμίσεων του Open eClass</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="copyright" content="Copyright 2003-2009 GUnet - http://www.gunet.gr" />
+<meta name="keywords" content="elearning, lms, cms, openeclass, open eclass, eclass, e-class, learning, management, system, asynchronous, synchronous, teleteaching, GUnet" />
+<meta name="robots" content="NOFOLLOW,INDEX" />
+<meta http-equiv="Content-Sequrity-Policy"
+  content="script-src 'self' ;"
+>
+<meta http-equiv="Content-Sequrity-Policy"
+  content="script ;"
+>
+<link href="../../template/classic/theme.css" rel="stylesheet" type="text/css" />
+<link href="../../template/classic/tool_content.css" rel="stylesheet" type="text/css" />
+<link href="../../template/classic/perso.css" rel="stylesheet" type="text/css" />
+<link href="../../modules/admin/tool.css" rel="stylesheet" type="text/css" />
+<link rel="SHORTCUT ICON" href="/template/classic/img/eclass-icon.ico" />
+
+</head>
+
+<body >
+<div id="container">
+  <!-- BEGIN HeaderBlock -->
+  <div id="header">
+    <a id="logo" href="/" title="Open eClass"></a>
+    <div id="fbar_info">
+      <div class="user">Χρήστης:&nbsp;<b>Διαχειριστής Πλατφόρμας, </b>
+      <a href="../../index.php?logout=yes" title="Έξοδος" >Έξοδος</a>
+      </div>
+      <div class="langSwitch">
+	<form name="langform" action="/modules/admin/eclassconf.php" method="get" >
+<select name='localize' onChange="document.langform.submit();" class='auth_input'>
+<option selected value='el'>Ελληνικά</option>
+<option value='en'>English</option>
+<option value='es'>Español</option>
+</select>
+</form>
+      </div>
+    </div>
+  </div>
+  <!-- END HeaderBlock -->
+
+  <div id="thirdBar">
+    <div id="tbar_info">
+      <div id="search">
+      <p class="title">Αναζήτηση</p>
+      <form name="form1" id="form1" method="post" action="/modules/search/search.php">
+      <input type="text" class="key" name="search_terms" size="14"/>
+      <input type="image" name="submit" class="ok" alt="Ok"  src="/template/classic/img/go_button.gif" />
+      <br />
+      <a href="/modules/search/search.php" title="advanced search" >Σύνθετη αναζήτηση</a>
+      </form>
+      </div>
+
+      <div id="bread">
+      <ul>
+        <li class="first"><a href="http://psarotaverna-o-takis.csec.chatzi.org/">Προσωπικό χαρτοφυλάκιο</a></li>
+        <li>&#187; <a href="index.php">&Epsilon;&rho;&gamma;&alpha;&lambda;&epsilon;ί&alpha; &Delta;&iota;&alpha;&chi;&epsilon;ί&rho;&iota;&sigma;&eta;&sigmaf; &Pi;&lambda;&alpha;&tau;&phi;ό&rho;&mu;&alpha;&sigmaf;</a></li>
+        <li>&#187; &Alpha;&rho;&chi;&epsilon;ί&omicron; &rho;&upsilon;&theta;&mu;ί&sigma;&epsilon;&omega;&nu; &tau;&omicron;&upsilon; Open eClass</li>
+                        </ul>
+      </div>
+
+      <div><span class="briefcase_icon">&nbsp;</span><span class="lesson">Προσωπικό χαρτοφυλάκιο</span></div>
+
+   </div>
+  </div>
+
+  <div id="content">
+    <div id="leftSub">
+      <div id="leftnav">
+        <div id="navcontainer">
+          <ul id="navlist">
+          <li class="category">Διαχείριση Χρηστών</li>
+          <li class="">
+           <div><a href="../admin/listusers.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Λίστα Χρηστών / Ενέργειες</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/listreq.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Αιτήσεις Εκπαιδευτών</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/auth.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Πιστοποίηση Χρηστών</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/change_user.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Σύνδεση με λογαριασμό άλλου χρήστη</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/multireguser.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Μαζική δημιουργία λογαριασμών χρηστών</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/mailtoprof.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Ενημερωτικό email</a></div>
+          </li>
+          <li class="category">Διαχείριση Μαθημάτων</li>
+          <li class="">
+           <div><a href="../admin/listcours.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Λίστα Μαθημάτων / Ενέργειες</a></div>
+          </li>
+          <li class="">
+           <div><a href="../course_info/restore_course.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Ανάκτηση Μαθήματος</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/addfaculte.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Κατάλογος Τμημάτων</a></div>
+          </li>
+          <li class="category">Διαχείριση Εξυπηρετητή</li>
+          <li class="">
+           <div><a href="../admin/cleanup.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Διαγραφή παλιών αρχείων</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/sysinfo/"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Πληροφορίες Συστήματος</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/phpInfo.php?to=phpinfo"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Πληροφορίες για την PHP</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/mysql/"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Διαχείριση Β.Δ. (phpMyAdmin)</a></div>
+          </li>
+          <li class="">
+           <div><a href="http://psarotaverna-o-takis.csec.chatzi.org/upgrade/"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Αναβάθμιση βάσης Δεδομένων</a></div>
+          </li>
+          <li class="category">Άλλα Εργαλεία</li>
+          <li class="">
+           <div><a href="../admin/adminannouncements.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Ανακοινώσεις Διαχειριστή</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/eclassconf.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Αρχείο ρυθμίσεων</a></div>
+          </li>
+          <li class="">
+           <div><a href="../admin/stateclass.php"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Στατιστικά Πλατφόρμας</a></div>
+          </li>
+          <li class="">
+           <div><a href="http://psarotaverna-o-takis.csec.chatzi.org/manuals/manA/OpeneClass23_ManA_el.pdf"><img src="../../template/classic/img/black-arrow1.gif" width="16" height="16" border="0" alt="" /> Εγχειρίδιο Διαχειριστή</a></div>
+          </li>
+          </ul>
+        </div>
+     </div>
+     
+    </div>
+    <div id="content_main">
+      <div id="tool_title">Αρχείο ρυθμίσεων του Open eClass<small class='actmod'>&nbsp;</small></div>
+
+      <!-- BEGIN TOOL CONTENT -->
+      
+      
+    <form action="/modules/admin/eclassconf.php" method="post">
+
+  <table class="FormData" width="99%" align="left">
+  <tbody>
+  <tr>
+    <th width="220" class="left">&nbsp;</th>
+    <td>Επεξεργασία Αρχείου <b>config.php</b></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$urlServer:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formurlServer" size="40" value="http://psarotaverna-o-takis.csec.chatzi.org/"></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$urlAppend:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formurlAppend" size="40" value=""></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$webDir:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formwebDir" size="40" value="/var/www/openeclass/"></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <th class="left"><b>$mysqlServer:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formmysqlServer" size="40" value="db"></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$mysqlUser:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formmysqlUser" size="40" value="root"></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$mysqlPassword:</b></th>
+    <td><input class="FormData_InputText" type="password" name="formmysqlPassword" size="40" value="ma3ZFZPQdW"></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$mysqlMainDb:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formmysqlMainDb" size="40" value="eclass"></td>
+  </tr>  <tr>
+    <th class="left"><b>$phpMyAdminURL:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formphpMyAdminURL" size="40" value="../admin/mysql/"></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$phpSysInfoURL:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formphpSysInfoURL" size="40" value="../admin/sysinfo/"></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$emailAdministrator:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formemailAdministrator" size="40" value="webmaster@localhost"></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$administratorName:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formadministratorName" size="40" value="Διαχειριστής"></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$administratorSurname:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formadministratorSurname" size="40" value="Πλατφόρμας"></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$siteName:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formsiteName" size="40" value="Open eClass"></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <th class="left"><b>$postaddress:</b></th>
+	<td><textarea rows='3' cols='40' name='formpostaddress'></textarea></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$telephone:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formtelephone" size="40" value="+30 2xx xxxx xxx"></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$fax:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formfax" size="40" value=""></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$emailhelpdesk:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formemailhelpdesk" size="40" value=""></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$Institution:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formInstitution" size="40" value="Ακαδημαϊκό Διαδίκτυο GUNet "></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$InstitutionUrl:</b></th>
+    <td><input class="FormData_InputText" type="text" name="formInstitutionUrl" size="40" value="http://www.gunet.gr/"></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <th class="left"><b>$language:</b></th>
+    <td><select name="formlanguage">
+      <option value="greek" selected>greek</option>
+      <option value="english" >english</option>
+    </select></td>
+  </tr>
+  <tr>
+    <th class="left"><b>$close_user_registration:</b></th>
+    <td><select name="formcloseuserregistration">
+      <option value="true" >true</option>
+      <option value="false" selected>false</option>
+    </select></td>
+</tr>
+  <tr>
+    <th class="left"><b>$durationAccount:</b></th>
+    <td><input type="text" name="formdurationAccount" size="40" value="126144000"></td>
+</tr>
+  <tr>
+    <th class="left"><b>$encryptedPasswd:</b></th>
+    <td><input type="checkbox" checked disabled> Υποχρεωτική κρυπτογράφηση των συνθηματικών</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <th class="left">Αντικατάσταση του config_backup.php.</th>
+    <td><input type="checkbox" name="backupfile" checked></td>
+  </tr>
+  <tr>
+    <th class="left">&nbsp;</th>
+    <td><input type='submit' name='submit' value='Αλλαγή'></td>
+    <input type="hidden" name="csrf_token" value="e63eb2e57298b26876b4ffa3b7f7ef18d9d8cccff3ad97a37e1ab214810eac3c"/>
+  </tr>
+  </tbody>
+  </table>
+  </form>
+
+    <br>
+    <p align="right"><a href="index.php">Επιστροφή</a></p>
+
+      <!-- END TOOL CONTENT -->
+    </div>
+
+  	<div id="clearfooter"></div>
+
+  	<div id="footer">
+		<p><a href="../../info/copyright.php">Copyright &copy; 2003-2010 OpeneClass</a></p>
+  	</div>
+  </div>
+</div>
+
+</body>
+</html>

